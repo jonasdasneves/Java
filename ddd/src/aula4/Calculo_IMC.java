@@ -1,4 +1,4 @@
-package ddd.src.aula4;
+package aula4;
 
 public class Calculo_IMC {
 

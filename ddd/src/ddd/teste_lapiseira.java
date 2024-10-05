@@ -1,6 +1,6 @@
 package ddd;
 
-public class teste_caneta {
+public class teste_lapiseira {
 
     public static void main(String[] args) {
 
