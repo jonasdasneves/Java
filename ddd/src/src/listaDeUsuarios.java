@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 
-public class listaDeUsuarios {
-    private ArrayList<usuario> usuarios;
+public class ListaDeUsuarios {
+    private ArrayList<Usuario> usuarios;
 
-    public listaDeUsuarios(){
-        usuarios = new ArrayList<usuario>();
+    public ListaDeUsuarios(){
+        usuarios = new ArrayList<Usuario>();
     }
 
-    public void adicionarUsuario(usuario cliente){
+    public void adicionarUsuario(Usuario cliente){
         usuarios.add(cliente);
     }
 
-    public void atualizar(int indice, usuario cliente) {
+    public void atualizar(int indice, Usuario cliente) {
         //validando o índice
         if(indice >= 0 && indice <usuarios.size()) {
             usuarios.set(indice, cliente);
@@ -19,9 +19,9 @@ public class listaDeUsuarios {
         }
     }
 
-    public usuario login(String nome){
-        usuario usuarioLogado = null;
-        for(usuario user: usuarios){
+    public Usuario login(String nome){
+        Usuario usuarioLogado = null;
+        for(Usuario user: usuarios){
             if(user.getName().equals(nome)){
                 usuarioLogado = user;
                 System.out.println(user.getName()+"Está logado! ");

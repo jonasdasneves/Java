@@ -2,7 +2,7 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 
-public class usuario {
+public class Usuario {
     private String name;
     private String cpf;
     private String nascimento;
@@ -10,7 +10,7 @@ public class usuario {
     private String celular;
     private boolean posicaoAutorizada;
 
-    public usuario(String name, String cpf, String nascimento, String email, String celular) {
+    public Usuario(String name, String cpf, String nascimento, String email, String celular) {
         System.out.println("\n==================== USUÁRIO CRIADO ====================\n");
         this.name = name;
         this.cpf = cpf;
@@ -32,7 +32,7 @@ public class usuario {
         return posicao;
     }
 
-    public void receberRota(rota rota, String email, String celular){
+    public void receberRota(Rota rota, String email, String celular){
         System.out.println("Um link para você seguir a rota traçada foi enviado ao seu email e WhatsApp!");
     }
 

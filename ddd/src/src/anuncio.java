@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-public class anuncio {
+public class Anuncio {
     private int idAnuncio;
     private String produtoAnuncio;
     private String empresaAnuncio;
     private int click = 0;
 
-    public anuncio(int idAnuncio, String produtoAnuncio, String empresaAnuncio) {
+    public Anuncio(int idAnuncio, String produtoAnuncio, String empresaAnuncio) {
         System.out.println("\n==================== ANUNCIO CRIADO ====================\n");
         this.idAnuncio = idAnuncio;
         this.produtoAnuncio = produtoAnuncio;
         this.empresaAnuncio = empresaAnuncio;
     }
 
-    public boolean acaoAnuncio(usuario usuario){
+    public boolean acaoAnuncio(Usuario usuario){
         Scanner input = new Scanner(System.in);
         int acao = 0;
         boolean clicar = false;

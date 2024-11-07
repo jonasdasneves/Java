@@ -1,19 +1,19 @@
 import java.util.Date;
 import java.util.Scanner;
 
-public class avaliacao {
+public class Avaliacao {
     private String comentario;
     private int nota;
     private String dataAvaliacao;
 
-    public avaliacao(String dataAvaliacao) {
+    public Avaliacao(String dataAvaliacao) {
         System.out.println("\n==================== AVALIAÇÃO CRIADA ====================\n");
         this.dataAvaliacao = dataAvaliacao;
     }
 
     public String deixarComentario(){
         Scanner input = new Scanner(System.in);
-        System.out.println("\nGostaria de deixar um comentario com sua opinião sobre o serviço?\n");
+        System.out.println("\nDeixe seu comentário avaliando o serviço!\n");
         String comment = input.next();
         return comment;
     }

@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-public class listaDeTransportes {
-    private ArrayList<transporte> transportes;
+public class ListaDeTransportes {
+    private ArrayList<Transporte> transportes;
 
-    public listaDeTransportes(){
-        transportes = new ArrayList<transporte>();
+    public ListaDeTransportes(){
+        transportes = new ArrayList<Transporte>();
     }
 
-    public void adicionarTransporte(transporte meioTransporte){
+    public void adicionarTransporte(Transporte meioTransporte){
         transportes.add(meioTransporte);
     }
 

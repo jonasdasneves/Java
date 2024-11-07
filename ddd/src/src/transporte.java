@@ -1,21 +1,21 @@
-public class transporte {
-    private String Transporte;
+public class Transporte {
+    private String transporte;
     private double custo;
     private String tipo;
 
-    public transporte(String Transporte,double custo,String tipo) {
+    public Transporte(String Transporte,double custo,String tipo) {
         System.out.println("\n==================== TRANSPORTE REGISTRADO ====================\n");
-        this.Transporte = Transporte;
+        this.transporte = Transporte;
         this.custo = custo;
         this.tipo = tipo;
     }
 
     public String getTransporte() {
-        return Transporte;
+        return transporte;
     }
 
     public void setTransporte(String transporte) {
-        Transporte = transporte;
+        this.transporte = transporte;
     }
 
     public double getCusto() {

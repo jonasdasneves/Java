@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-public class listaDeLocais {
-    private ArrayList<local> locais;
+public class ListaDeLocais {
+    private ArrayList<Local> locais;
 
-    public listaDeLocais(){
-        locais = new ArrayList<local>();
+    public ListaDeLocais(){
+        locais = new ArrayList<Local>();
     }
 
-    public void adicionarLocal(local local){
+    public void adicionarLocal(Local local){
         locais.add(local);
     }
 

@@ -1,9 +1,9 @@
-public class local {
+public class Local {
     private String cidade;
     private String endereco;
     private String nome;
 
-    public local(String cidade, String endereco, String nome) {
+    public Local(String cidade, String endereco, String nome) {
         System.out.println("\n==================== LOCAL REGISTRADO ====================\n");
         this.cidade = cidade;
         this.endereco = endereco;

@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class rota {
+public class Rota {
     private double tempoRota;
     private Date dataRota;
-    private ArrayList<transporte> meiosTransporte;
-    private local destino;
-    private local partida;
-    private ArrayList<local> paradas;
+    private ArrayList<Transporte> meiosTransporte;
+    private Local destino;
+    private Local partida;
+    private ArrayList<Local> paradas;
 
-    public rota(local destino, local partida) {
+    public Rota(Local destino, Local partida) {
         System.out.println("\n==================== ROTA CRIADA ====================\n");
         this.destino = destino;
         this.partida = partida;
-        paradas = new ArrayList<local>();
+        paradas = new ArrayList<Local>();
     }
 
-    public void adicionarParada(local localParada){
+    public void adicionarParada(Local localParada){
         paradas.add(localParada);
     }
 
@@ -32,7 +32,7 @@ public class rota {
 
     }
 
-    public double calcularCusto(transporte transporte,double distancia){
+    public double calcularCusto(Transporte transporte,double distancia){
         double custoTransporte;
         if (transporte.getTipo().equals("coletivo")){
             custoTransporte = transporte.getCusto();
@@ -59,27 +59,27 @@ public class rota {
         this.dataRota = dataRota;
     }
 
-    public ArrayList<transporte> getMeiosTransporte() {
+    public ArrayList<Transporte> getMeiosTransporte() {
         return meiosTransporte;
     }
 
-    public void setMeiosTransporte(ArrayList<transporte> meiosTransporte) {
+    public void setMeiosTransporte(ArrayList<Transporte> meiosTransporte) {
         this.meiosTransporte = meiosTransporte;
     }
 
-    public local getDestino() {
+    public Local getDestino() {
         return destino;
     }
 
-    public void setDestino(local destino) {
+    public void setDestino(Local destino) {
         this.destino = destino;
     }
 
-    public local getPartida() {
+    public Local getPartida() {
         return partida;
     }
 
-    public void setPartida(local partida) {
+    public void setPartida(Local partida) {
         this.partida = partida;
     }
 
