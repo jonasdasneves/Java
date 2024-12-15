@@ -1,11 +1,11 @@
-package ddd;
+package aula2;
 
 public class teste_caneta {
 
     public static void main(String[] args) {
 
         //criando objeto da classe caneta
-        lapiseira c1 = new lapiseira();
+        caneta c1 = new caneta();
         System.out.println("Objeto: " + c1);
         System.out.println("Modelo: " + c1.getModelo());
         System.out.println("Ponta: "+ c1.getPonta());
@@ -27,7 +27,7 @@ public class teste_caneta {
         System.out.println("\n=========================================\n");
 
         //criando outro objeto da Classe Caneta
-        lapiseira c2 = new lapiseira();
+        caneta c2 = new caneta();
         c2.setModelo("mont blanc");
         c2.setPonta(0.7f);
         c2.setCor("Preta");

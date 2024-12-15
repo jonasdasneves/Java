@@ -1,4 +1,4 @@
-package ddd;
+package aula2;
 
 public class caneta {
     private String modelo;

@@ -1,4 +1,4 @@
-package aula17_ArrayList.exemplo5;
+package ExemploArrayList;
 
 import java.util.Scanner;
 

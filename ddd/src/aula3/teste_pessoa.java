@@ -1,4 +1,4 @@
-package ddd.src.aula3;
+package aula3;
 
 public class teste_pessoa {
     public teste_pessoa() {

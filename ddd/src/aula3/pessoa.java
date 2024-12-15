@@ -1,4 +1,4 @@
-package ddd.src.aula3;
+package aula3;
 
 public class pessoa {
     private String nome;
