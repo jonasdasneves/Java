@@ -9,6 +9,11 @@ public class Titulo {
     private int totaldeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public Titulo(String nome, int anoDelançamento) {
+        this.nome = nome;
+        this.anoDelançamento = anoDelançamento;
+    }
+
     public void exibeFichaTecnica(){
         System.out.println(nome);
         System.out.println(anoDelançamento);

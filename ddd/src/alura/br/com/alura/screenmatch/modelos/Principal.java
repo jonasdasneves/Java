@@ -8,19 +8,16 @@ import java.util.ArrayList;
 public class Principal {
 
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O poderoso chefão");
+        Filme meuFilme = new Filme("O poderoso chefão");
         meuFilme.setDuracaoEmMinutos(120);
         meuFilme.setAnoDelançamento(1988);
         System.out.println(meuFilme.getDuracaoEmMinutos());
 
-        Filme filmeDoPaulo = new Filme();
-        filmeDoPaulo.setNome("Dogville");
+        Filme filmeDoPaulo = new Filme("Dogville");
         filmeDoPaulo.setDuracaoEmMinutos(150);
         filmeDoPaulo.setAnoDelançamento(1988);
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Jujutsu Kaisen 0");
+        Filme outroFilme = new Filme("Jujutsu Kaisen 0");
         outroFilme.setDuracaoEmMinutos(100);
         outroFilme.setAnoDelançamento(2022);
 
