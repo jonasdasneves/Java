@@ -1,25 +1,25 @@
-package alura.br.com.alura.screenmatch.modelos;
+package alura.br.com.alura.screenmatch.principal;
 
 import alura.br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import alura.br.com.alura.screenmatch.calculos.FiltroRecomendacao;
+import alura.br.com.alura.screenmatch.modelos.Episodio;
+import alura.br.com.alura.screenmatch.modelos.Filme;
+import alura.br.com.alura.screenmatch.modelos.Serie;
 
 import java.util.ArrayList;
 
 public class Principal {
 
     public static void main(String[] args) {
-        Filme meuFilme = new Filme("O poderoso chefão");
+        Filme meuFilme = new Filme("O poderoso chefão", 1988);
         meuFilme.setDuracaoEmMinutos(120);
-        meuFilme.setAnoDelançamento(1988);
         System.out.println(meuFilme.getDuracaoEmMinutos());
 
-        Filme filmeDoPaulo = new Filme("Dogville");
+        Filme filmeDoPaulo = new Filme("Dogville", 1988);
         filmeDoPaulo.setDuracaoEmMinutos(150);
-        filmeDoPaulo.setAnoDelançamento(1988);
 
-        Filme outroFilme = new Filme("Jujutsu Kaisen 0");
+        Filme outroFilme = new Filme("Jujutsu Kaisen 0", 2022);
         outroFilme.setDuracaoEmMinutos(100);
-        outroFilme.setAnoDelançamento(2022);
 
         ArrayList<Filme> filmes = new ArrayList<Filme>();
 
@@ -36,9 +36,7 @@ public class Principal {
         meuFilme.avalia(8);
         System.out.println(meuFilme.pegaMedia());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDelançamento(2000);
+        Serie lost = new Serie("Lost",2000);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(12);
