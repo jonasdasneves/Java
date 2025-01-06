@@ -5,6 +5,7 @@ import alura.br.com.alura.screenmatch.modelos.Serie;
 import alura.br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -31,6 +32,10 @@ public class PrincipalComListas {
             }
 
         }
+
+        System.out.println(lista);
+        lista.sort(Comparator.comparing(Titulo::getNome));
+        System.out.println(lista);
 
 
     }
